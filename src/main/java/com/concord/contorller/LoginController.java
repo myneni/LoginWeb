@@ -38,7 +38,7 @@ public class LoginController {
 
 			boolean isValidUser = loginDelegate.isValidUser(loginBean.getUsername(), loginBean.getPassword());
 			if (isValidUser) {
-				System.out.println("User Login Successful");
+				System.out.println("User Login Successful !!!");
 				req.setAttribute("loggedInuser", loginBean.getUsername());
 				model = new ModelAndView("Welcome");
 
